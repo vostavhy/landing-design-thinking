@@ -1,0 +1,13 @@
+.navigation {
+  display: flex;
+  gap: 20px;
+  &__item {
+    list-style: none;
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}

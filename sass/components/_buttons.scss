@@ -1,0 +1,31 @@
+.btn {
+  padding: 11px 25px 13px;
+  font-family: 'Open-Sans', Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn_bordered {
+  border: 1px solid $color-hovered;
+  background: $color-light;
+  color: $color-text;
+}
+
+.btn_bordered:hover {
+  background: $color-hovered;
+}
+
+.btn_colored {
+  border: 1px solid $color-primary;
+  background: $color-primary;
+  color: $color-light;
+}
+
+.btn_colored:hover {
+  background: $color-secondary;
+}

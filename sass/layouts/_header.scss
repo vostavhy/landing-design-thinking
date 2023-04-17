@@ -1,0 +1,16 @@
+.header {
+  padding: 15px 0 17px 0;
+  background: $color-light;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 14px;
+}
