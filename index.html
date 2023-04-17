@@ -1,13 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design thinking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a href="#" class="logo">Logo</a>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Product</li>
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <button class="btn btn_bordered">Sign in</button>
+        <button class="btn btn_colored">Sign up</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="promo">
+    <div class="wrapper">
+      <div class="promo__content">
+        <h1 class="promo__title">Design thinking</h1>
+        <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
+          to imagine your next user experience.</p>
+        <div class="promo__buttons">
+          <button class="btn btn_colored">Get started</button>
+          <a href="#" class="link-button">
+            <span class="ico ico_play">Watch the video</span>
+          </a>
+        </div>
+      </div>
+      <div class="promo__image">
+        <img src="img/promo.png" alt="promo" />
+      </div>
+    </div>
+  </section>
+
+  <section class="tools">
+    <div class="wrapper">
+      <h2 class="section-title">We design tools to unveil your superpowers</h2>
+      <div class="layout-4-column">
+        <div class="tool">
+          <div class="tool__icon">
+            <span class="icon-squre icon-squre_lilium"></span>
+          </div>
+          <h4 class="tool__title">First click tests</h4>
+          <p class="tool__text">WWhile most people enjoy casino gambling,</p>
+        </div>
+      </div>
+      <div class="tools-button">
+        <button class="btn btn_colored">Sign up now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="strategies">
+    <div class="wrapper">
+      <h2 class="section-title">Marketing Strategies</h2>
+      <p class="section-text">Join 40,000+ other marketers and get proven strategies on email marketing</p>
+      <div class="strategies__tags">
+        <span class="tag tag_selected">All</span>
+        <span class="tag tag_bordered">Art</span>
+        <span class="tag tag_bordered">Culture</span>
+        <span class="tag tag_bordered">Design</span>
+      </div>
+    </div>
+    <div class="layout-3-column">
+      <div class="strategy block-shadowed">
+        <img src="img/strategies/strategy-1.jpg" alt="strategy" />
+        <h3 class="strategy__title">Increasing Prosperity With Positive Thinking</h3>
+        <div class="strategies__tags">
+          <span class="tag tag_colored">Art</span>
+          <span class="tag tag_colored">Culture</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrapper">
+      <h2 class="section-title">About us</h2>
+      <p class="section-text">Your About Us page is vital. It’s often the first stop in any user’s journey through a
+        website or blog. It also shouldn’t be their last, because first impressions count online just as much as they
+        do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your
+        awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).
+      </p>
+      <div class="layout-3-column">
+        <div class="employee block shadowed">
+          <div class="employee__content">
+            <h5 class="employee__name">Kathy Rosenberg</h5>
+            <p class="employee__position">Product Mannager</p>
+            <p class="employee__email"> <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a></p>
+            <img src="img/employees/employee-1.jpg" alt="employer" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact-us">
+    <div class="wrapper">
+      <h2 class="section-title">Contact us</h2>
+      <div class="layout-2-column">
+        <div class="contact-us__content">
+          <p class="contact-us__text">Your About Us page is vital. It’s often the first stop in any user’s journey
+            through a website or blog. It also shouldn’t be their last, because first impressions count online just as
+            much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without
+            reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making
+            a purchase).</p>
+          <p class="contact-us__info">
+            <span class="ico ico_phone"></span> <a href="tel:+1234567890">+123 456 7890</a>
+          </p>
+          <p class="contact-us__info">
+            <span class="ico ico_letter"></span> <a href="mailto:emailname@gmail.com">emailname@gmail.com</a>
+          </p>
+          <div class="contact-us__form">
+            <form action="">
+              <div class="layout-2-column">
+                <input type="text" name="name" placeholder="Your name" />
+                <input type="email" name="email" placeholder="Your email" />
+              </div>
+              <textarea name="question" id="" cols="30" rows="10"></textarea>
+              <div class="contact-us__button">
+                <button type="submit" class="btn btn_colored">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="layout-4-column">
+        <a href="#" class="logo">
+          Logo
+        </a>
+        <div class="footer-navigation">
+          <h4 class="footer-navigation__title">Quick Links</h4>
+          <ul class="footer-navigation__links">
+            <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">About Us</a></li>
+            <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Blog</a></li>
+            <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Contact</a></li>
+            <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
