@@ -1,12 +1,26 @@
+// normalize
+@import 'base/normalize';
+
+// abstracts
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+// Base
 @import 'base/base';
+@import 'base/typography';
+
+// Layouts
 @import 'layouts/wrapper';
+@import 'layouts/header';
+@import 'layouts/navigation';
+@import 'layouts/contact-us';
+@import 'layouts/promo';
+@import 'layouts/strategies';
+@import 'layouts/tools';
 
 // Components
 @import 'components/buttons';
-@import 'components/contact-us';
-@import 'components/promo';
-
-// Layouts
-@import 'layouts/header';
-@import 'layouts/navigation';
+@import 'components/logo';
+@import 'components/icons';
+@import 'components/columns';
