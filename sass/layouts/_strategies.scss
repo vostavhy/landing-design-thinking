@@ -1,12 +1,32 @@
-//.strategy {
-//  max-width: 377px;
-////}
+.strategies {
+  padding: 30px 0 96px;
+}
 
-//.strategy__image {
-//  width: 377px;
-//  height: 199px;
-//  &_big {
-//    width: 787px;
-//    height: auto;
-//  }
-//}
+.strategies__title {
+  margin-bottom: 14px;
+}
+
+.strategies__text {
+  margin-bottom: 24px;
+  color: $color-text;
+}
+
+.strategies__tags {
+  margin-bottom: 30px;
+}
+
+.strategy__wrapper > * {
+  margin-bottom: 30px;
+}
+
+.strategy {
+  padding-bottom: 28px;
+}
+
+.strategy__title {
+  margin: 24px 34px 29px 33px;
+}
+
+.strategy__tags {
+  margin-left: 33px;
+}

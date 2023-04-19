@@ -351,7 +351,13 @@ h5 {
 }
 
 .contact-us {
+  padding: 62px 82px;
   background-color: #ffeee1;
+}
+
+.contact-us__text {
+  margin: 17px 0 59px;
+  color: #544837;
 }
 
 .promo {
@@ -385,8 +391,44 @@ h5 {
   gap: 44px;
 }
 
+.strategies {
+  padding: 30px 0 96px;
+}
+
+.strategies__title {
+  margin-bottom: 14px;
+}
+
+.strategies__text {
+  margin-bottom: 24px;
+  color: #544837;
+}
+
+.strategies__tags {
+  margin-bottom: 30px;
+}
+
+.strategy__wrapper > * {
+  margin-bottom: 30px;
+}
+
+.strategy {
+  padding-bottom: 28px;
+}
+
+.strategy__title {
+  margin: 24px 34px 29px 33px;
+}
+
+.strategy__tags {
+  margin-left: 33px;
+}
+
 .tools {
-  padding-top: 80px;
+  padding: 80px 0 90px;
+  background-image: url("../img/backgrounds/tools-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .tools__title {
@@ -398,6 +440,20 @@ h5 {
 
 .tool__icon {
   padding-bottom: 30px;
+}
+
+.tool__title {
+  padding-bottom: 16px;
+  color: #2f281e;
+}
+
+.tool__text {
+  padding-bottom: 60px;
+  color: #544837;
+}
+
+.tools__button {
+  text-align: center;
 }
 
 .btn {
@@ -514,7 +570,58 @@ h5 {
   justify-content: space-between;
 }
 .layout-2-column > * {
-  flex-basis: 45%;
+  flex-basis: 48%;
+}
+
+.tag {
+  padding: 5px 14px;
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #544837;
+  border: 1px solid #d7d7d7;
+  border-radius: 90px;
+}
+.tag_selected {
+  color: #ffffff;
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+.tag_colored {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+}
+
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  padding: 10px 21px;
+  border-radius: 5px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #ff9900;
+  outline: none;
+}
+.contact-form textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+}
+
+.contact-form__line {
+  margin-bottom: 19px;
+}
+
+.contact-form__button {
+  min-width: 117px;
 }
 
 /*# sourceMappingURL=main.css.map */
