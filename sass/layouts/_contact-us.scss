@@ -5,5 +5,24 @@
 
 .contact-us__text {
   margin: 17px 0 59px;
-  color: $color-text;
+}
+
+.contact-us__info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  a {
+    @include font($size: 2.5rem, $height: 2.6rem, $weight: 400);
+    color: $color-text;
+    text-decoration: none;
+    @extend %transition;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.contact-us__phone {
+  margin-bottom: 20px;
 }

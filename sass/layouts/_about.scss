@@ -1,0 +1,39 @@
+.about {
+  padding: 30px 0 101px;
+}
+
+.about__text {
+  margin: 14px 0 45px;
+}
+
+.employees-container {
+  padding-right: 30px;
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.employee__position,
+.employee__email {
+  @include font($size: 1.4rem, $height: 2.6rem, $weight: 400);
+}
+
+.employee__image-container {
+  position: relative;
+  left: 60px;
+  padding: 20px 0 23px;
+}
+
+.employee__image {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.employee__email {
+  text-decoration: none;
+}

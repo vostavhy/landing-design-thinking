@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 58px;
+}
+
+.footer-navigation__item {
+  list-style: none;
+}
+
+.footer-navigation__link {
+  text-decoration: none;
+  @include font($size: 1.6rem, $height: 3.5rem, $weight: 400);
+  color: $color-text;
+  &:hover {
+    color: $color-primary;
+  }
+  @extend %transition;
+}
