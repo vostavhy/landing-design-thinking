@@ -13,3 +13,27 @@
     flex-basis: $width;
   }
 }
+
+@mixin media-laptop {
+  @media (max-width: 1197px) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-big {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

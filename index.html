@@ -16,14 +16,16 @@
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a href="#" class="logo">
-        <object type="image/svg+xml" data="img/logo.svg" class="logo-object">
-          Your browser does not support SVG
-        </object>
-      </a>
-      <!--<a href="#" class="logo">
-        <img src="img/logo.svg" alt="logo" class="logo-object" />
-      </a>-->
+      <div class="header__logo-wrapper">
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+        </span>
+        <a href="#" class="logo">
+          <object type="image/svg+xml" data="img/logo.svg" class="logo-object">
+            Your browser does not support SVG
+          </object>
+        </a>
+      </div>
       <nav class="header__navigation">
         <ul class="navigation">
           <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
@@ -53,8 +55,8 @@
           </a>
         </div>
       </div>
-      <div class="promo__image">
-        <img src="img/promo.png" alt="promo" />
+      <div class="promo__image-container">
+        <img class="promo__image" src="img/promo.png" alt="promo" />
       </div>
     </div>
   </section>

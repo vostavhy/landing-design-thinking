@@ -8,9 +8,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    padding-left: 24px;
+  }
 }
 
 .header__buttons {
   display: flex;
   gap: 14px;
+  @include media-mobile-big {
+    display: none;
+  }
+}
+
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  @include media-tablet {
+    display: none;
+  }
 }

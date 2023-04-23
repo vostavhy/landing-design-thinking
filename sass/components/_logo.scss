@@ -1,6 +1,17 @@
-.logo-svg:hover {
-  .logo-path {
-    @extend %transition;
-    fill: $color-primary;
+.logo {
+  display: flex;
+}
+
+.logo-object {
+  width: 160px;
+}
+
+.logo-svg {
+  cursor: pointer;
+  &:hover {
+    .logo-path {
+      @extend %transition;
+      fill: $color-primary;
+    }
   }
 }
