@@ -3,6 +3,14 @@
   background-image: url('../img/backgrounds/tools-bg.png');
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: contain;
+  @include media-tablet {
+    padding-bottom: 53px;
+  }
+
+  @include media-mobile-big {
+    padding: 30px 0 47px;
+  }
 }
 
 .tools__title {
@@ -15,23 +23,58 @@
     padding-bottom: 50px;
   }
 
-  @include media-mobile-small {
+  @include media-mobile-big {
     max-width: 333px;
     padding-bottom: 43px;
   }
 }
 
+.tools__columns {
+  @include media-tablet {
+    @include columns(45%);
+  }
+  @include media-mobile-big {
+    @include columns(100%);
+  }
+}
+
+.tool {
+  padding-bottom: 60px;
+  @include media-tablet {
+    padding-bottom: 54px;
+    text-align: center;
+  }
+  @include media-mobile-big {
+    padding-bottom: 30px;
+  }
+}
+
 .tool__icon {
-  padding-bottom: 30px;
+  padding-bottom: 47px;
+
+  @include media-tablet {
+    padding-bottom: 20px;
+  }
+
+  @include media-mobile-big {
+    padding-bottom: 8px;
+  }
 }
 
 .tool__title {
   padding-bottom: 16px;
   color: $color-heading;
+
+  @include media-tablet {
+    padding-bottom: 6px;
+  }
+
+  @include media-mobile-big {
+    padding-bottom: 0;
+  }
 }
 
 .tool__text {
-  padding-bottom: 60px;
   color: $color-text;
 }
 

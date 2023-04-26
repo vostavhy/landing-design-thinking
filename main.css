@@ -817,6 +817,17 @@ h5 {
   background-image: url("../img/backgrounds/tools-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: contain;
+}
+@media (max-width: 768px) {
+  .tools {
+    padding-bottom: 53px;
+  }
+}
+@media (max-width: 414px) {
+  .tools {
+    padding: 30px 0 47px;
+  }
 }
 
 .tools__title {
@@ -830,24 +841,79 @@ h5 {
     padding-bottom: 50px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   .tools__title {
     max-width: 333px;
     padding-bottom: 43px;
   }
 }
 
+@media (max-width: 768px) {
+  .tools__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tools__columns > * {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 414px) {
+  .tools__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tools__columns > * {
+    flex-basis: 100%;
+  }
+}
+
+.tool {
+  padding-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .tool {
+    padding-bottom: 54px;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .tool {
+    padding-bottom: 30px;
+  }
+}
+
 .tool__icon {
-  padding-bottom: 30px;
+  padding-bottom: 47px;
+}
+@media (max-width: 768px) {
+  .tool__icon {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .tool__icon {
+    padding-bottom: 8px;
+  }
 }
 
 .tool__title {
   padding-bottom: 16px;
   color: #2f281e;
 }
+@media (max-width: 768px) {
+  .tool__title {
+    padding-bottom: 6px;
+  }
+}
+@media (max-width: 414px) {
+  .tool__title {
+    padding-bottom: 0;
+  }
+}
 
 .tool__text {
-  padding-bottom: 60px;
   color: #544837;
 }
 
