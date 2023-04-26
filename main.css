@@ -531,9 +531,25 @@ h5 {
   height: 160px;
   resize: none;
 }
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .contact-form__layout {
+    flex-direction: column;
+  }
+}
 
 .contact-form__line {
   margin-bottom: 19px;
+}
+@media (max-width: 414px) {
+  .contact-form__line {
+    width: 100%;
+  }
 }
 
 .contact-form__button {
@@ -656,12 +672,40 @@ h5 {
 }
 
 .contact-us {
-  padding: 62px 82px;
+  padding: 62px 0 82px;
   background-color: #ffeee1;
+}
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 50px 0;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .contact-us {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us__layout {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .contact-us__text {
   margin: 17px 0 59px;
+}
+@media (max-width: 768px) {
+  .contact-us__text {
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 414px) {
+  .contact-us__text {
+    margin: 8px 0 24px;
+  }
 }
 
 .contact-us__info {
@@ -680,9 +724,38 @@ h5 {
 .contact-us__info a:hover {
   color: #ff9900;
 }
+@media (max-width: 414px) {
+  .contact-us__info a {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+@media (max-width: 768px) {
+  .contact-us__info {
+    justify-content: center;
+  }
+}
 
 .contact-us__phone {
   margin-bottom: 20px;
+}
+@media (max-width: 414px) {
+  .contact-us__phone {
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us__mail {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .contact-us__mail {
+    margin-bottom: 41px;
+  }
 }
 
 .promo {

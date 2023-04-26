@@ -18,10 +18,23 @@
     height: 160px;
     resize: none;
   }
+
+  @include media-tablet {
+    width: 100%;
+  }
+}
+
+.contact-form__layout {
+  @include media-mobile-big {
+    flex-direction: column;
+  }
 }
 
 .contact-form__line {
   margin-bottom: 19px;
+  @include media-mobile-big {
+    width: 100%;
+  }
 }
 
 .contact-form__button {
