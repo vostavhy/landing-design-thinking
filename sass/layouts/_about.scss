@@ -1,5 +1,9 @@
 .about {
   padding: 30px 0 101px;
+
+  @include media-tablet {
+    padding: 0 0 50px;
+  }
 }
 
 .about__text {
