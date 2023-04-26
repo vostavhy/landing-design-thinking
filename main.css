@@ -858,6 +858,13 @@ h5 {
   padding: 25px 35px;
 }
 
+.strategy__image {
+  height: 46%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
 .strategy__title {
   margin-bottom: 30px;
 }
