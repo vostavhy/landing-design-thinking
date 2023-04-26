@@ -10,6 +10,16 @@
 @import 'base/base';
 @import 'base/typography';
 
+// Components
+@import 'components/buttons';
+@import 'components/logo';
+@import 'components/icons';
+@import 'components/columns';
+@import 'components/tags';
+@import 'components/blocks';
+@import 'components/forms';
+@import 'components/hamburger';
+
 // Layouts
 @import 'layouts/wrapper';
 @import 'layouts/header';
@@ -21,13 +31,3 @@
 @import 'layouts/about';
 @import 'layouts/section';
 @import 'layouts/footer';
-
-// Components
-@import 'components/buttons';
-@import 'components/logo';
-@import 'components/icons';
-@import 'components/columns';
-@import 'components/tags';
-@import 'components/blocks';
-@import 'components/forms';
-@import 'components/humburger';

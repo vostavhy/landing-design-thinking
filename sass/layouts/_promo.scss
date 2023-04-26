@@ -4,16 +4,26 @@
   @include media-tablet {
     padding: 0;
   }
+  @include media-mobile-big {
+    padding: 12px 0 20px;
+    text-align: center;
+  }
 }
 
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-mobile-big {
+    flex-direction: column-reverse;
+  }
 }
 
 .promo__title {
   margin-bottom: 30px;
+  @include media-mobile-big {
+    margin-bottom: 10px;
+  }
 }
 
 .promo__text {
@@ -23,8 +33,15 @@
   @extend %font-secondary;
   @include font($size: 1.8rem, $height: 2.8rem, $weight: 400);
   color: $color-text;
+
   @include media-tablet {
     width: 380px;
+  }
+
+  @include media-mobile-big {
+    margin-bottom: 23px;
+    width: 100%;
+    @include font($size: 1.6rem, $height: 2.4rem, $weight: 400);
   }
 }
 
@@ -33,10 +50,25 @@
     width: 591px;
     height: 456px;
   }
+  @include media-mobile-big {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .promo__buttons {
   display: inline-flex;
   align-items: center;
   gap: 44px;
+  @include media-mobile-big {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.promo__button {
+  @include media-mobile-big {
+    padding: 15px 40px;
+  }
 }

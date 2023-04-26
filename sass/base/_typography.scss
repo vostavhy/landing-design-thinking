@@ -5,9 +5,6 @@ html {
 body {
   @extend %font-primary;
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 400);
-  @include media-mobile-big {
-    @include font($size: 1.6rem, $height: 2.4rem);
-  }
 }
 
 h1 {
