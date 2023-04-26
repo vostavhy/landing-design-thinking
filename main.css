@@ -275,6 +275,14 @@ body {
   font-style: normal;
   font-weight: 400;
 }
+@media (max-width: 414px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
 
 h1 {
   font-size: 4.4rem;
@@ -282,7 +290,7 @@ h1 {
   font-style: normal;
   font-weight: 700;
 }
-@media (max-width: 320px) {
+@media (max-width: 414px) {
   h1 {
     font-size: 3.2rem;
     line-height: 4.2rem;
@@ -297,12 +305,28 @@ h2 {
   font-style: normal;
   font-weight: 700;
 }
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
 
 h3 {
   font-size: 2.4rem;
   line-height: 3.4rem;
   font-style: normal;
   font-weight: 700;
+}
+@media (max-width: 414px) {
+  h3 {
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    font-style: normal;
+    font-weight: 700;
+  }
 }
 
 h4 {
@@ -311,9 +335,18 @@ h4 {
   font-style: normal;
   font-weight: 600;
 }
+@media (max-width: 414px) {
+  h4 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
 
 h5 {
   margin: 0;
+  color: #544837;
   font-size: 1.6rem;
   line-height: 2.6rem;
   font-style: normal;
@@ -327,6 +360,11 @@ h5 {
 @media (max-width: 1197px) {
   .wrapper {
     padding: 0 46px;
+  }
+}
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 21px;
   }
 }
 
@@ -346,6 +384,11 @@ h5 {
     padding-left: 24px;
   }
 }
+@media (max-width: 414px) {
+  .header__wrapper {
+    padding: 0 21px;
+  }
+}
 
 .header__buttons {
   display: flex;
@@ -360,6 +403,7 @@ h5 {
 .header__logo-wrapper {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -513,6 +557,17 @@ h5 {
   margin: 0 auto;
   padding-bottom: 70px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .tools__title {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .tools__title {
+    max-width: 333px;
+    padding-bottom: 43px;
+  }
 }
 
 .tool__icon {

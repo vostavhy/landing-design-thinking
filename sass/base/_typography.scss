@@ -5,29 +5,46 @@ html {
 body {
   @extend %font-primary;
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 400);
+  @include media-mobile-big {
+    @include font($size: 1.6rem, $height: 2.4rem);
+  }
 }
 
 h1 {
   @extend %font-secondary;
   @include font($size: 4.4rem, $height: 5.4rem);
-  @include media-mobile-small {
+  $color: $color-heading;
+  @include media-mobile-big {
     @include font($size: 3.2rem, $height: 4.2rem);
   }
 }
 
 h2 {
   @include font($size: 3.4rem, $height: 4.6rem);
+  $color: $color-heading;
+  @include media-mobile-big {
+    @include font($size: 2.4rem, $height: 3.4rem);
+  }
 }
 
 h3 {
   @include font($size: 2.4rem, $height: 3.4rem);
+  $color: $color-heading;
+  @include media-mobile-big {
+    @include font($size: 2.1rem, $height: 3.1rem);
+  }
 }
 
 h4 {
   @include font($size: 2.2rem, $height: 3rem, $weight: 600);
+  $color: $color-heading;
+  @include media-mobile-big {
+    @include font($size: 2rem, $height: 2.7rem);
+  }
 }
 
 h5 {
   margin: 0;
+  color: $color-text;
   @include font($size: 1.6rem, $height: 2.6rem);
 }

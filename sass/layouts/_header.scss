@@ -11,6 +11,9 @@
   @include media-tablet {
     padding-left: 24px;
   }
+  @include media-mobile-big {
+    padding: 0 21px;
+  }
 }
 
 .header__buttons {
@@ -24,6 +27,7 @@
 .header__logo-wrapper {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .header__navigation {
