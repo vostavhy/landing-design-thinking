@@ -244,7 +244,7 @@ input[type=checkbox], input[type=radio] {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.footer-navigation__link, .promo__text, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -1120,17 +1120,68 @@ h5 {
 .footer {
   padding-top: 58px;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 47px;
+  }
+}
+@media (max-width: 414px) {
+  .footer {
+    padding-top: 31px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 34px;
+  }
+}
+@media (max-width: 414px) {
+  .footer__wrapper {
+    gap: 27px;
+  }
+}
+
+.footer__layout {
+  flex-basis: 70%;
+}
+@media (max-width: 768px) {
+  .footer__layout {
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  .footer__layout {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 414px) {
+  .footer-navigation__title {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
 
 .footer-navigation__item {
   list-style: none;
 }
 
 .footer-navigation__link {
-  text-decoration: none;
   font-size: 1.6rem;
   line-height: 3.5rem;
   font-style: normal;
   font-weight: 400;
+  text-decoration: none;
   color: #544837;
 }
 .footer-navigation__link:hover {

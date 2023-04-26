@@ -1,5 +1,47 @@
 .footer {
   padding-top: 58px;
+
+  @include media-tablet {
+    padding-top: 47px;
+  }
+
+  @include media-mobile-big {
+    padding-top: 31px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include media-tablet {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  @include media-mobile-big {
+    gap: 27px;
+  }
+}
+
+.footer__layout {
+  flex-basis: 70%;
+
+  @include media-tablet {
+    width: 100%;
+  }
+
+  @include media-mobile-big {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.footer-navigation__title {
+  @include media-mobile-big {
+    @include font($size: 1.8rem, $height: 3rem, $weight: 600);
+  }
 }
 
 .footer-navigation__item {
@@ -7,8 +49,9 @@
 }
 
 .footer-navigation__link {
-  text-decoration: none;
+  @extend %font-secondary;
   @include font($size: 1.6rem, $height: 3.5rem, $weight: 400);
+  text-decoration: none;
   color: $color-text;
   &:hover {
     color: $color-primary;
