@@ -43,7 +43,7 @@
   }
 }
 
-.strategy__wrapper {
+.strategies__wrapper {
   > * {
     margin-bottom: 30px;
 
@@ -61,6 +61,10 @@
 .strategy {
   display: flex;
   flex-direction: column;
+
+  &_hidden {
+    display: none;
+  }
 }
 
 .strategy__content {

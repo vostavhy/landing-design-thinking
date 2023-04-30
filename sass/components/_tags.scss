@@ -2,8 +2,11 @@
   padding: 5px 14px;
   @include font($size: 1.3rem, $height: 2.8rem, $weight: 400);
   color: $color-text;
-  border: 1px solid $color-tag-border;
   border-radius: 90px;
+
+  &_bordered {
+    border: 1px solid $color-tag-border;
+  }
 
   &_selected {
     color: $color-light;
