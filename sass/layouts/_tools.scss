@@ -3,8 +3,8 @@
   background-image: url('../img/backgrounds/tools-bg.png');
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
   @include media-tablet {
+    background-size: contain;
     padding-bottom: 53px;
   }
 

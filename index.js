@@ -1,4 +1,6 @@
 import { Strategy } from './js/strategy';
+import { Modal } from './js/modal';
+import { StrategyModal } from './js/strategyModal';
 import strategiesJSON from './strategies.json';
 
 window.onload = () => {
@@ -7,6 +9,12 @@ window.onload = () => {
 
   // Render strategies
   renderStrategiesToDOM();
+
+  // Tools buttons
+  addToolsClickHandler();
+
+  // Strategy modal
+  addStrategyModalClickHandler();
 };
 
 const addTagsClickHandler = () => {
@@ -64,7 +72,6 @@ const renderStrategiesToDOM = () => {
   strategiesWrapper.innerHTML = '';
 
   const strategies = generateStrategies(strategiesJSON.strategies);
-  console.log('strategies', strategies);
 
   strategies.forEach((strategy) => {
     strategiesWrapper.appendChild(strategy.generateStrategy());
@@ -74,4 +81,35 @@ const renderStrategiesToDOM = () => {
 const generateStrategies = (data) => {
   const strategies = data.map((strategy) => new Strategy(strategy));
   return strategies;
+};
+
+const addToolsClickHandler = () => {
+  document.querySelector('.tools__button .btn').addEventListener('click', (event) => {
+    generateToolsModal();
+  });
+};
+
+const generateToolsModal = () => {
+  renderModelWindow('Test content for Tools modal');
+};
+
+const renderModelWindow = (content) => {
+  let modal = new Modal('tools-model');
+  modal.buildModal(content);
+};
+
+const addStrategyModalClickHandler = () => {
+  document.querySelector('.strategies__wrapper').addEventListener('click', (event) => {
+    if (event.target.closest('.strategy')) {
+      console.log('clicked strategy');
+      renderModelStrategy(event.target.closest('.strategy'));
+    }
+  });
+};
+
+const renderModelStrategy = (strategy) => {
+  const strategyId = strategy.dataset.id;
+  const strategyData = strategiesJSON.strategies.find((strategy) => strategy.id === strategyId);
+  const strategyModal = new StrategyModal('strategy-modal', strategyData);
+  strategyModal.renderModal();
 };
