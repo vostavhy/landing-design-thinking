@@ -1,6 +1,7 @@
 import { Strategy } from './js/strategy';
 import { Modal } from './js/modal';
 import { StrategyModal } from './js/strategyModal';
+import { Menu } from './js/menu';
 import strategiesJSON from './strategies.json';
 
 window.onload = () => {
@@ -15,6 +16,9 @@ window.onload = () => {
 
   // Strategy modal
   addStrategyModalClickHandler();
+
+  // Hamburger Menu
+  addBurgerClickHandler();
 };
 
 const addTagsClickHandler = () => {
@@ -112,4 +116,23 @@ const renderModalStrategy = (strategy) => {
   const strategyData = strategiesJSON.strategies.find((strategy) => strategy.id === strategyId);
   const strategyModal = new StrategyModal('strategy-modal', strategyData);
   strategyModal.renderModal();
+};
+
+const addBurgerClickHandler = () => {
+  document.querySelector('.hamburger').addEventListener('click', (event) => {
+    console.log('clicked burger');
+    renderMenu();
+  });
+};
+
+const renderMenu = () => {
+  const menuItems = [
+    { title: 'Home', link: '#' },
+    { title: 'Service', link: '#' },
+    { title: 'About', link: '#' },
+    { title: 'Product', link: '#' },
+  ];
+
+  const menu = new Menu(menuItems);
+  menu.toggle();
 };

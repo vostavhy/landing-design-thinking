@@ -276,6 +276,10 @@ ul {
   padding-left: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 html {
   font-size: 10px;
 }
@@ -590,6 +594,7 @@ h5 {
   width: 31px;
   height: 25px;
   margin-right: 37px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .hamburger {
