@@ -14,18 +14,19 @@ export class StrategyModal extends Modal {
   generateStrategy() {
     let template = '';
     let strategy = document.createElement('div');
-    strategy.className = 'strategy-modal__content';
+    strategy.className = 'strategy-modal__info';
 
-    this.urlToImage && (template += `<img class="strategy__image" src="${this.urlToImage}" alt="${this.title}">`);
+    this.urlToImage &&
+      (template += `<img class="strategy__image strategy-modal__image" src="${this.urlToImage}" alt="${this.title}">`);
 
     if (this.title || this.tags || this.content || this.date) {
-      template += '<div class="strategy__content">';
+      template += '<div class="strategy__content strategy-modal__content">';
 
-      this.date && (template += `<p class="strategy__date">${this.date}</p>`);
+      this.date && (template += `<p class="strategy__date strategy-modal__date">${this.date}</p>`);
 
-      this.title && (template += `<h3 class="strategy__title">${this.title}</h3>`);
+      this.title && (template += `<h3 class="strategy__title strategy-modal__title">${this.title}</h3>`);
 
-      this.content && (template += `<p class="strategy__text">${this.content}</p>`);
+      this.content && (template += `<p class="strategy__text strategy-modal__text">${this.content}</p>`);
 
       this.tags && (template += this.generateTags());
       template += '</div>';

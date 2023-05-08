@@ -102,12 +102,12 @@ const addStrategyModalClickHandler = () => {
   document.querySelector('.strategies__wrapper').addEventListener('click', (event) => {
     if (event.target.closest('.strategy')) {
       console.log('clicked strategy');
-      renderModelStrategy(event.target.closest('.strategy'));
+      renderModalStrategy(event.target.closest('.strategy'));
     }
   });
 };
 
-const renderModelStrategy = (strategy) => {
+const renderModalStrategy = (strategy) => {
   const strategyId = strategy.dataset.id;
   const strategyData = strategiesJSON.strategies.find((strategy) => strategy.id === strategyId);
   const strategyModal = new StrategyModal('strategy-modal', strategyData);
