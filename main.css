@@ -681,6 +681,11 @@ h5 {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 414px) {
+  .menu {
+    top: 70px;
+  }
+}
 
 .menu__content {
   width: 100%;
