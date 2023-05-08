@@ -52,12 +52,14 @@ export class Menu {
   init() {
     this.renderMenu();
     this.toggleScroll();
+    this.toggleHamburger();
   }
 
   destroy() {
     const menu = document.querySelector('.menu');
     menu.remove();
     this.toggleScroll();
+    this.toggleHamburger();
   }
 
   toggle() {
@@ -78,4 +80,11 @@ export class Menu {
   toggleScroll() {
     document.body.classList.toggle('no-scroll');
   }
+
+  toggleHamburger = () => {
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.classList.toggle('hamburger_active');
+    const hamburgerLine = document.querySelector('.hamburger__line');
+    hamburgerLine.classList.toggle('hamburger__line_active');
+  };
 }

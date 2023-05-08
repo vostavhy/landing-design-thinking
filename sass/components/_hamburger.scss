@@ -6,6 +6,7 @@
   content: '';
   background: #173a56;
   border-radius: 5px;
+  @extend %transition;
 }
 
 .hamburger {
@@ -29,10 +30,23 @@
     top: calc(100% - 1.5px);
     left: 0;
   }
+
+  &_active {
+    &:before {
+      transform: translateY(10.5px) rotate(45deg);
+    }
+    &:after {
+      transform: translateY(-12.5px) rotate(-45deg);
+    }
+  }
 }
 
 .hamburger__line {
   @extend %hamburger-line;
   top: calc(50% - 1.5px);
   left: 0;
+  &_active {
+    transform: translateX(-100%);
+    background: $color-light;
+  }
 }

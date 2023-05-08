@@ -236,7 +236,7 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
-.footer-navigation__link, .contact-us__info a, .navigation__link, .menu__link, .modal__close-icon, .logo-svg:hover .logo-path, .btn {
+.footer-navigation__link, .contact-us__info a, .navigation__link, .menu__link, .modal__close-icon, .hamburger__line, .hamburger:after, .hamburger:before, .logo-svg:hover .logo-path, .btn {
   transition: all 0.3s ease-out;
 }
 
@@ -609,10 +609,20 @@ h5 {
   top: calc(100% - 1.5px);
   left: 0;
 }
+.hamburger_active:before {
+  transform: translateY(10.5px) rotate(45deg);
+}
+.hamburger_active:after {
+  transform: translateY(-12.5px) rotate(-45deg);
+}
 
 .hamburger__line {
   top: calc(50% - 1.5px);
   left: 0;
+}
+.hamburger__line_active {
+  transform: translateX(-100%);
+  background: #ffffff;
 }
 
 .overlay {
